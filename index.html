@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CamargoFilm</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">CamargoFilm</div>
+
+  <nav class="nav">
+    <a href="#inicio">Início</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos">O que eu faço</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <div class="pill">Produção de Vídeos • Fotografia • Edição</div>
+    <h1>CamargoFilm</h1>
+    <p>
+      Estética cinematográfica para elevar a presença digital do seu negócio
+      e eternizar eventos com emoção e narrativa.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#portfolio">Ver Portfólio</a>
+      <a class="btn ghost" href="#contato">Pedir orçamento</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">🎬</span><span class="stat-text">Cinematic</span></div>
+      <div class="stat"><span class="stat-num">⚡</span><span class="stat-text">Entrega rápida</span></div>
+      <div class="stat"><span class="stat-num">📱</span><span class="stat-text">Reels/Shorts</span></div>
+    </div>
+  </div>
+
+  <a class="scroll" href="#portfolio" aria-label="Rolar para Portfólio">
+    <span class="mouse"></span>
+    <span class="scroll-text">rolar</span>
+  </a>
+</section>
+
+<!-- PORTFÓLIO (CATEGORIAS) -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Portfólio</h2>
+      <p>Clique em uma categoria para ver todas as fotos.</p>
+    </div>
+
+    <div class="cat-grid">
+      <!-- CARD ESPORTES -->
+      <button class="cat-card" data-open="sport" aria-label="Abrir categoria Esportes">
+        <div class="cat-cover">
+          <img src="img/sport/sport1.jpg" alt="Capa Esportes">
+        </div>
+        <div class="cat-meta">
+          <h3>Esportes</h3>
+          <span>Ver galeria</span>
+        </div>
+      </button>
+
+      <!-- CARD ENSAIOS -->
+      <button class="cat-card" data-open="ensaios" aria-label="Abrir categoria Ensaios">
+        <div class="cat-cover">
+          <img src="img/ensaios/ensaio1.jpg" alt="Capa Ensaios">
+        </div>
+        <div class="cat-meta">
+          <h3>Ensaios</h3>
+          <span>Ver galeria</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL CATEGORIA (abre a galeria inteira) -->
+<div class="cat-modal" id="catModal" aria-hidden="true">
+  <div class="cat-modal-inner">
+    <div class="cat-modal-head">
+      <button class="cat-back" id="catClose" aria-label="Voltar">← Voltar</button>
+      <h3 id="catTitle">Categoria</h3>
+      <span class="cat-hint">Clique em uma foto para ampliar</span>
+    </div>
+
+    <div class="ig-grid cat-gallery" id="catGallery"></div>
+  </div>
+</div>
+
+<!-- O QUE EU FAÇO -->
+<section id="servicos" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>O que eu faço</h2>
+      <p>Produção audiovisual com estética cinematográfica.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h3>🎬 Produção Audiovisual</h3>
+        <p>
+          Transformo a realidade do seu evento ou negócio em uma narrativa cinematográfica,
+          criando vídeos que vão além do comum.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>📸 Fotografia</h3>
+        <p>
+          Registro momentos com um olhar artístico, capturando emoção e detalhes com estética de filme.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>✨ Edição & Storytelling</h3>
+        <p>
+          Composições cuidadosas + edição sensível para transformar cada momento em um frame inesquecível.
+        </p>
+      </article>
+    </div>
+
+    <div class="callout">
+      <p>
+        Seja elevando a presença digital do seu comércio ou eternizando a emoção de um aniversário,
+        festa ou casamento, eu crio memórias com qualidade cinematográfica — não apenas registro,
+        mas conto a sua história com a grandiosidade que ela merece.
+      </p>
+      <a class="btn primary" href="#contato">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE (COM FOTO) -->
+<section id="sobre" class="section">
+  <div class="container about">
+    <div class="about-photo">
+      <img src="img/leo.jpg" alt="Leonardo Camargo">
+    </div>
+
+    <div class="about-text">
+      <h2>Sobre</h2>
+      <p>
+        Prazer, sou Leonardo Camargo, trabalho com produção Audiovisual.
+        Minha missão é transformar a realidade do seu evento ou negócio em uma narrativa cinematográfica.
+      </p>
+      <p>
+        Seja elevando a presença digital do seu comércio ou eternizando a emoção de um aniversário, festa ou casamento,
+        meu olhar como videomaker e fotógrafo busca ir além do registro comum: eu crio memórias com estética de filme.
+      </p>
+      <p>
+        Através de composições cuidadosas e uma edição sensível, transformo cada momento em um frame inesquecível,
+        entregando fotos e vídeos que não apenas documentam, mas contam a sua história com a grandiosidade que ela merece.
+      </p>
+
+      <div class="about-tags">
+        <span class="tag">📍 Bauru - SP</span>
+        <span class="tag">🎬 Vídeo</span>
+        <span class="tag">📸 Foto</span>
+        <span class="tag">✨ Cinematic</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contato</h2>
+      <p>Fale diretamente comigo.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-item" href="https://wa.me/5514998143399" target="_blank" rel="noopener">
+        <div class="contact-icon">💬</div>
+        <div>
+          <div class="contact-title">WhatsApp</div>
+          <div class="contact-sub">(14) 99814-3399</div>
+        </div>
+      </a>
+
+      <a class="contact-item" href="mailto:leocamargoliveira11@gmail.com">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-title">Email</div>
+          <div class="contact-sub">leocamargoliveira11@gmail.com</div>
+        </div>
+      </a>
+
+      <a class="contact-item" href="https://instagram.com/camargofilm" target="_blank" rel="noopener">
+        <div class="contact-icon">📸</div>
+        <div>
+          <div class="contact-title">Instagram</div>
+          <div class="contact-sub">@camargofilm</div>
+        </div>
+      </a>
+    </div>
+
+    <footer class="footer">
+      © <span id="year"></span> CamargoFilm
+    </footer>
+  </div>
+</section>
+
+<!-- Botão flutuante WhatsApp -->
+<a href="https://wa.me/5514998143399" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  💬
+</a>
+
+<!-- LIGHTBOX (tela cheia pra foto) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Visualizador de imagem">
+    <button class="lb-close" id="lbClose" aria-label="Fechar">✕</button>
+    <img id="lbImg" alt="Imagem ampliada">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
